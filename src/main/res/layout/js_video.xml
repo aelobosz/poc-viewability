@@ -1,0 +1,24 @@
+<com.google.android.exoplayer2.ui.SimpleExoPlayerView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/videoView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    app:surface_type="texture_view"
+    tools:context="com.iab.omid.sampleapp.fragments.VideoAdNativeFragment">
+
+    <WebView
+        android:id="@+id/sample_display_webview"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/waitingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/waiting"/>
+
+</com.google.android.exoplayer2.ui.SimpleExoPlayerView>
