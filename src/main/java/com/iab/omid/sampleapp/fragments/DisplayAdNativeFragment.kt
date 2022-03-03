@@ -97,7 +97,7 @@ class DisplayAdNativeFragment : Fragment() {
     private fun setupAdView() {
         try {
             adSession = AdSessionUtil.getNativeAdSession(
-                context,
+                requireContext(),
                 CUSTOM_REFERENCE_DATA,
                 CreativeType.NATIVE_DISPLAY
             )
